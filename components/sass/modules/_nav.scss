@@ -3,6 +3,7 @@ header #nav {
   @include background-image( linear-gradient(
   top, lighten($navBackground, 10), $navBackground));
   width: 100%;
+  z-index: 10;
 
   .navbar {
     @include container;
