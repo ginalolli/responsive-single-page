@@ -148,12 +148,18 @@ header .fullheight {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-/* line 5, ../../../components/sass/modules/_intro.scss */
+/* line 8, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup {
   padding: 100px;
 }
-/* line 8, ../../../components/sass/modules/_intro.scss */
+/* line 11, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup h1 {
   color: #FFFFFF;
   font-size: 5em;
@@ -162,7 +168,7 @@ header .fullheight .hgroup h1 {
   text-shadow: #000000 0 0 20px;
   text-align: center;
 }
-/* line 17, ../../../components/sass/modules/_intro.scss */
+/* line 20, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup h2 {
   display: block;
   color: #FFFFFF;
@@ -176,11 +182,11 @@ header .fullheight .hgroup h2 {
   padding: 10px;
   font-size: 1.3em;
 }
-/* line 31, ../../../components/sass/modules/_intro.scss */
+/* line 34, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p {
   text-align: center;
 }
-/* line 34, ../../../components/sass/modules/_intro.scss */
+/* line 37, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p img {
   padding-top: 50px;
   max-width: 50px;
@@ -478,6 +484,72 @@ header #nav .navbar ul li a:hover {
   }
 }
 
+/* line 2, ../../../components/sass/modules/_dining.scss */
+#dining h1, #dining h2 {
+  color: #DF4848;
+  padding: 10px 0;
+}
+/* line 7, ../../../components/sass/modules/_dining.scss */
+#dining img {
+  width: 100%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+@media (min-width: 650px) {
+  /* line 13, ../../../components/sass/modules/_dining.scss */
+  #dining #areadining {
+    margin-bottom: 30px;
+  }
+  /* line 16, ../../../components/sass/modules/_dining.scss */
+  #dining #areadining h1 {
+    font-weight: 200;
+    font-size: 2.5em;
+  }
+  /* line 21, ../../../components/sass/modules/_dining.scss */
+  #dining #areadining p {
+    font-size: 1.5em;
+    line-height: 140%;
+  }
+  /* line 26, ../../../components/sass/modules/_dining.scss */
+  #dining section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 29, ../../../components/sass/modules/_dining.scss */
+  #dining section h2 {
+    font-size: 1.2em;
+    line-height: 120%;
+    color: #CD0069;
+  }
+  /* line 34, ../../../components/sass/modules/_dining.scss */
+  #dining section p {
+    padding-top: 10px;
+    font-size: 1em;
+    line-height: 130%;
+  }
+}
+/* line 42, ../../../components/sass/modules/_dining.scss */
+#dining #roomservice {
+  margin-top: 20px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZlZmFmMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fefaf0));
+  background-image: -moz-linear-gradient(top, #ffffff, #fefaf0);
+  background-image: -webkit-linear-gradient(top, #ffffff, #fefaf0);
+  background-image: linear-gradient(to bottom, #ffffff, #fefaf0);
+  padding-left: 9.16667%;
+  padding-right: 9.16667%;
+  text-align: center;
+  border-top: 1px solid #DF4848;
+  border-bottom: 1px solid #DF4848;
+}
+
 /* line 1, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNhM2Y5MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ1YjI5ZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -521,7 +593,6 @@ header #nav .navbar ul li a:hover {
 @media (min-width: 450px) and (max-width: 650px) {
   /* line 23, ../../../components/sass/modules/_hotelinfo.scss */
   #hotelinfo #usefulinfo section.checklist {
-    border: 1px solid red;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -531,45 +602,45 @@ header #nav .navbar ul li a:hover {
     padding-right: 5%;
   }
 }
-/* line 29, ../../../components/sass/modules/_hotelinfo.scss */
+/* line 28, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo #usefulinfo section h2 {
   color: #b5b7e1;
   font-size: 1.3em;
   line-height: 110%;
   padding: 10px 0;
 }
-/* line 36, ../../../components/sass/modules/_hotelinfo.scss */
+/* line 35, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo #usefulinfo section p {
   font-size: 1em;
   line-height: 130%;
 }
-/* line 42, ../../../components/sass/modules/_hotelinfo.scss */
+/* line 41, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo #usefulinfo section ul li {
   list-style: square;
   margin-left: 10%;
   margin-bottom: 5px;
   line-height: 115%;
 }
-/* line 51, ../../../components/sass/modules/_hotelinfo.scss */
+/* line 50, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo #usefulinfo section#arrivalinfo ul {
   margin: 0;
 }
-/* line 53, ../../../components/sass/modules/_hotelinfo.scss */
+/* line 52, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo #usefulinfo section#arrivalinfo ul li {
   list-style: none;
   border-top: 1px solid #FFFFFF;
   padding: 15px 0;
   margin-left: 0;
 }
-/* line 58, ../../../components/sass/modules/_hotelinfo.scss */
+/* line 57, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo #usefulinfo section#arrivalinfo ul li strong {
   color: #EFC94C;
 }
-/* line 62, ../../../components/sass/modules/_hotelinfo.scss */
+/* line 61, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo #usefulinfo section#arrivalinfo ul li:first-child {
   border-top: none;
 }
-/* line 69, ../../../components/sass/modules/_hotelinfo.scss */
+/* line 68, ../../../components/sass/modules/_hotelinfo.scss */
 #hotelinfo #greenprogram {
   background-color: rgba(26, 68, 60, 0.5);
   margin-top: 20px;
@@ -580,7 +651,7 @@ header #nav .navbar ul li a:hover {
   border-radius: 20px;
 }
 @media (min-width: 1200px) {
-  /* line 69, ../../../components/sass/modules/_hotelinfo.scss */
+  /* line 68, ../../../components/sass/modules/_hotelinfo.scss */
   #hotelinfo #greenprogram {
     background-image: url("../images/misc/greenplanet.png");
     background-size: 400px;
@@ -606,7 +677,6 @@ header #nav .navbar ul li a:hover {
 @media (min-width: 960px) {
   /* line 3, ../../../components/sass/modules/_rooms.scss */
   #rooms header {
-    border: 1px solid red;
     max-width: 60em;
     margin-left: auto;
     margin-right: auto;
@@ -620,13 +690,19 @@ header #nav .navbar ul li a:hover {
     clear: both;
   }
 }
-/* line 13, ../../../components/sass/modules/_rooms.scss */
+/* line 12, ../../../components/sass/modules/_rooms.scss */
 #rooms .room {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 9.16667%;
   padding-right: 9.16667%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   padding: 200px 0;
 }
 /* line 12, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
@@ -636,13 +712,13 @@ header #nav .navbar ul li a:hover {
   clear: both;
 }
 @media (min-width: 650px) {
-  /* line 13, ../../../components/sass/modules/_rooms.scss */
+  /* line 12, ../../../components/sass/modules/_rooms.scss */
   #rooms .room {
     padding-left: 59.16667%;
     padding-right: 9.16667%;
   }
 }
-/* line 20, ../../../components/sass/modules/_rooms.scss */
+/* line 23, ../../../components/sass/modules/_rooms.scss */
 #rooms .room .content {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -650,11 +726,11 @@ header #nav .navbar ul li a:hover {
   background: rgba(255, 255, 255, 0.8);
   padding: 20px;
 }
-/* line 26, ../../../components/sass/modules/_rooms.scss */
+/* line 28, ../../../components/sass/modules/_rooms.scss */
 #rooms .room .content h1 {
   color: #DF4848;
 }
-/* line 31, ../../../components/sass/modules/_rooms.scss */
+/* line 33, ../../../components/sass/modules/_rooms.scss */
 #rooms #piccadilly {
   background: url("../images/hotel/rooms_piccadilly.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -662,7 +738,7 @@ header #nav .navbar ul li a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 34, ../../../components/sass/modules/_rooms.scss */
+/* line 36, ../../../components/sass/modules/_rooms.scss */
 #rooms #cambridge {
   background: url("../images/hotel/rooms_cambridge.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -670,7 +746,7 @@ header #nav .navbar ul li a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 37, ../../../components/sass/modules/_rooms.scss */
+/* line 39, ../../../components/sass/modules/_rooms.scss */
 #rooms #westminster {
   background: url("../images/hotel/rooms_westminster.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -678,7 +754,7 @@ header #nav .navbar ul li a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 40, ../../../components/sass/modules/_rooms.scss */
+/* line 42, ../../../components/sass/modules/_rooms.scss */
 #rooms #oxford {
   background: url("../images/hotel/rooms_oxford.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -686,7 +762,7 @@ header #nav .navbar ul li a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 43, ../../../components/sass/modules/_rooms.scss */
+/* line 45, ../../../components/sass/modules/_rooms.scss */
 #rooms #victoria {
   background: url("../images/hotel/rooms_victoria.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -694,7 +770,7 @@ header #nav .navbar ul li a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 46, ../../../components/sass/modules/_rooms.scss */
+/* line 48, ../../../components/sass/modules/_rooms.scss */
 #rooms #manchester {
   background: url("../images/hotel/rooms_manchester.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;

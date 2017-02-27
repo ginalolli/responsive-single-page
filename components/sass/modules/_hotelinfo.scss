@@ -21,7 +21,6 @@
       }
       @include breakpoint(450px $small) {// between 450px and 650px
         &.checklist {
-          border: 1px solid red;
           @include span(1 of 2);
         }
       }

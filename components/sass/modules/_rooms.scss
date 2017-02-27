@@ -4,7 +4,6 @@
     margin-bottom: 20px;
     @include container(90%);
     @include breakpoint($medium) {//min-width 960px
-      border: 1px solid red;
       @include container;
       @include pad(1,1);
     }
@@ -13,15 +12,18 @@
   .room {
     @include container(100%); //100% of the width of the browser
     @include pad(1,1);
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
     @include breakpoint($small) {
       @include pad(7,1);
     }
-    padding: 200px 0;
+    padding: 200px 0; // for browsers that do not support flexbox
     .content {
       @include border-radius(10px);
       background: rgba($light, .8);
       padding: 20px;
-
 
       h1 {
         color: $red;
