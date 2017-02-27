@@ -143,7 +143,9 @@ body {
 
 /* line 2, ../../../components/sass/modules/_intro.scss */
 header .fullheight {
-  background: url("../images/hotel/splash_hotelphoto.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/splash_hotelphoto.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -202,12 +204,12 @@ header #nav {
   background-image: linear-gradient(to bottom, #0a5c71, #063642);
   width: 100%;
 }
-/* line 10, ../../../components/sass/_mixins.scss */
+/* line 23, ../../../components/sass/_mixins.scss */
 header #nav:before, header #nav:after {
   content: '';
   display: table;
 }
-/* line 15, ../../../components/sass/_mixins.scss */
+/* line 28, ../../../components/sass/_mixins.scss */
 header #nav:after {
   clear: both;
 }
@@ -379,12 +381,12 @@ header #nav .navbar ul li a:hover {
   color: #a24a19;
   padding: 10px 0;
 }
-/* line 10, ../../../components/sass/_mixins.scss */
+/* line 23, ../../../components/sass/_mixins.scss */
 #welcome .gallery:before, #welcome .gallery:after {
   content: '';
   display: table;
 }
-/* line 15, ../../../components/sass/_mixins.scss */
+/* line 28, ../../../components/sass/_mixins.scss */
 #welcome .gallery:after {
   clear: both;
 }
@@ -484,6 +486,27 @@ header #nav .navbar ul li a:hover {
   }
 }
 
+/* line 2, ../../../components/sass/modules/_events.scss */
+#events #businessmeetings {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/events_conference.jpg");
+  background-repeat: no-repeat;
+  background-position: 65% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 6, ../../../components/sass/modules/_events.scss */
+#events #weddings {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/events_wedding.jpg");
+  background-repeat: no-repeat;
+  background-position: 40% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* line 2, ../../../components/sass/modules/_dining.scss */
 #dining h1, #dining h2 {
   color: #DF4848;
@@ -569,12 +592,12 @@ header #nav .navbar ul li a:hover {
   font-size: 3em;
   font-weight: 200;
 }
-/* line 10, ../../../components/sass/_mixins.scss */
+/* line 23, ../../../components/sass/_mixins.scss */
 #hotelinfo #usefulinfo:before, #hotelinfo #usefulinfo:after {
   content: '';
   display: table;
 }
-/* line 15, ../../../components/sass/_mixins.scss */
+/* line 28, ../../../components/sass/_mixins.scss */
 #hotelinfo #usefulinfo:after {
   clear: both;
 }
@@ -732,7 +755,9 @@ header #nav .navbar ul li a:hover {
 }
 /* line 33, ../../../components/sass/modules/_rooms.scss */
 #rooms #piccadilly {
-  background: url("../images/hotel/rooms_piccadilly.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_piccadilly.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -740,7 +765,9 @@ header #nav .navbar ul li a:hover {
 }
 /* line 36, ../../../components/sass/modules/_rooms.scss */
 #rooms #cambridge {
-  background: url("../images/hotel/rooms_cambridge.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_cambridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -748,7 +775,9 @@ header #nav .navbar ul li a:hover {
 }
 /* line 39, ../../../components/sass/modules/_rooms.scss */
 #rooms #westminster {
-  background: url("../images/hotel/rooms_westminster.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_westminster.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -756,7 +785,9 @@ header #nav .navbar ul li a:hover {
 }
 /* line 42, ../../../components/sass/modules/_rooms.scss */
 #rooms #oxford {
-  background: url("../images/hotel/rooms_oxford.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_oxford.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -764,7 +795,9 @@ header #nav .navbar ul li a:hover {
 }
 /* line 45, ../../../components/sass/modules/_rooms.scss */
 #rooms #victoria {
-  background: url("../images/hotel/rooms_victoria.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_victoria.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -772,7 +805,9 @@ header #nav .navbar ul li a:hover {
 }
 /* line 48, ../../../components/sass/modules/_rooms.scss */
 #rooms #manchester {
-  background: url("../images/hotel/rooms_manchester.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hotel/rooms_manchester.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
