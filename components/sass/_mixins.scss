@@ -1,0 +1,23 @@
+@mixin backImage($image) {
+  background: url($image) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin icons($image) {
+  background: url($image) no-repeat 6px 6px;
+  background-size: 35px;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
