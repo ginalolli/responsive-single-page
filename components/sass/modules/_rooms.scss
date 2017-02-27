@@ -1,0 +1,49 @@
+#rooms {
+
+  header {
+    margin-bottom: 20px;
+    @include container(90%);
+    @include breakpoint($medium) {//min-width 960px
+      border: 1px solid red;
+      @include container;
+      @include pad(1,1);
+    }
+  }
+
+  .room {
+    @include container(100%); //100% of the width of the browser
+    @include pad(1,1);
+    @include breakpoint($small) {
+      @include pad(7,1);
+    }
+    padding: 200px 0;
+    .content {
+      @include border-radius(10px);
+      background: rgba($light, .8);
+      padding: 20px;
+
+
+      h1 {
+        color: $red;
+      } //h1
+    } //content
+  } //room
+  #piccadilly {
+    @include backImage('../images/hotel/rooms_piccadilly.jpg');
+  }
+  #cambridge {
+    @include backImage('../images/hotel/rooms_cambridge.jpg');
+  }
+  #westminster {
+    @include backImage('../images/hotel/rooms_westminster.jpg');
+  }
+  #oxford {
+    @include backImage('../images/hotel/rooms_oxford.jpg');
+  }
+  #victoria {
+    @include backImage('../images/hotel/rooms_victoria.jpg');
+  }
+  #manchester {
+    @include backImage('../images/hotel/rooms_manchester.jpg');
+  }
+} //rooms
