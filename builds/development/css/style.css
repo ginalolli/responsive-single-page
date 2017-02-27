@@ -164,17 +164,36 @@ header #nav {
   background-image: linear-gradient(to bottom, #0a5c71, #063642);
   width: 100%;
 }
-/* line 15, ../../../components/sass/_mixins.scss */
+/* line 10, ../../../components/sass/_mixins.scss */
 header #nav:before, header #nav:after {
   content: '';
   display: table;
 }
-/* line 20, ../../../components/sass/_mixins.scss */
+/* line 15, ../../../components/sass/_mixins.scss */
 header #nav:after {
   clear: both;
 }
-/* line 9, ../../../components/sass/modules/_nav.scss */
+/* line 7, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+header #nav .navbar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 10, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar .brand {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   float: left;
   font-weight: 600;
   font-family: 200 1.5em/1.5em "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -182,7 +201,7 @@ header #nav .navbar .brand {
   text-transform: uppercase;
   background: #DF4848;
 }
-/* line 17, ../../../components/sass/modules/_nav.scss */
+/* line 19, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar .brand a {
   color: #FFFFFF;
   text-decoration: none;
@@ -191,11 +210,31 @@ header #nav .navbar .brand a {
   padding: 10px;
   font-size: 1.5em;
 }
-/* line 28, ../../../components/sass/modules/_nav.scss */
+@media (max-width: 650px) {
+  /* line 19, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar .brand a {
+    font-size: 1.2em;
+  }
+  /* line 29, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar .brand a span {
+    display: none;
+  }
+}
+/* line 36, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 38, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li {
   float: left;
 }
-/* line 30, ../../../components/sass/modules/_nav.scss */
+/* line 40, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a {
   color: #FFFFFF;
   font: 200 1em/1.5em "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -203,33 +242,56 @@ header #nav .navbar ul li a {
   text-decoration: none;
   display: inline-block;
   padding: 10px 10px 10px 45px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 2px;
 }
-/* line 38, ../../../components/sass/modules/_nav.scss */
+/* line 53, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.info {
-  background: url("../images/icons/info.png") no-repeat 6px 6px;
-  background-size: 35px;
+  background-image: url("../images/icons/info.png");
 }
-/* line 41, ../../../components/sass/modules/_nav.scss */
+/* line 56, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.rooms {
-  background: url("../images/icons/rooms.png") no-repeat 6px 6px;
-  background-size: 35px;
+  background-image: url("../images/icons/rooms.png");
 }
-/* line 44, ../../../components/sass/modules/_nav.scss */
+/* line 59, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.dining {
-  background: url("../images/icons/dining.png") no-repeat 6px 6px;
-  background-size: 35px;
+  background-image: url("../images/icons/dining.png");
 }
-/* line 47, ../../../components/sass/modules/_nav.scss */
+/* line 62, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.events {
-  background: url("../images/icons/events.png") no-repeat 6px 6px;
-  background-size: 35px;
+  background-image: url("../images/icons/events.png");
 }
-/* line 50, ../../../components/sass/modules/_nav.scss */
+/* line 65, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.attractions {
-  background: url("../images/icons/attractions.png") no-repeat 6px 6px;
-  background-size: 35px;
+  background-image: url("../images/icons/attractions.png");
 }
-/* line 54, ../../../components/sass/modules/_nav.scss */
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 40, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    padding: 10px 18px;
+  }
+  /* line 71, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a:after {
+    content: '\000a0';
+    display: block;
+  }
+  /* line 75, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a span {
+    display: none;
+  }
+}
+@media (min-width: 650px) and (max-width: 960px) {
+  /* line 40, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    padding-left: 10px;
+  }
+  /* line 83, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a.icon {
+    background-image: none;
+  }
+}
+/* line 88, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a:hover {
   color: #063642;
   background-color: #EFC94C;

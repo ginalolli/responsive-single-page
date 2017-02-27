@@ -6,11 +6,6 @@
   background-size: cover;
 }
 
-@mixin icons($image) {
-  background: url($image) no-repeat 6px 6px;
-  background-size: 35px;
-}
-
 @mixin clearfix {
   &:before,
   &:after {
