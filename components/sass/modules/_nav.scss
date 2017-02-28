@@ -90,7 +90,13 @@ header #nav {
             color: $blue;
             background-color: $navHover;
           }
+          &.active {
+            background-color: $red;
+            color: $light;
+          }
         }
+
+
       }
     }
   }

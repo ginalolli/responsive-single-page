@@ -11,7 +11,7 @@ $(function() {
 
 
   //CSS-TRICKS smooth scrolling
-  $(function() {
+
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -24,10 +24,35 @@ $(function() {
       }
     }
   });
-});
+
+  $(window).scroll(function() {
+    var windowpos = $(window).scrollTop() + topoffset;
+    $('nav li a').removeClass('active');
+
+    if(windowpos > $('#hotelinfo').offset().top) {
+      $('nav li a').removeClass('active');
+      $('a[href$="#hotelinfo"]').addClass('active');
+    }
+    if(windowpos > $('#rooms').offset().top) {
+      $('nav li a').removeClass('active');
+      $('a[href$="#dining"]').addClass('active');
+    }
+    if(windowpos > $('#rooms').offset().top) {
+      $('nav li a').removeClass('active');
+      $('a[href$="#dining"]').addClass('active');
+    }
+    if(windowpos > $('#events').offset().top) {
+      $('nav li a').removeClass('active');
+      $('a[href$="#events"]').addClass('active');
+    }
+    if(windowpos > $('#attractions').offset().top) {
+      $('nav li a').removeClass('active');
+      $('a[href$="#attractions"]').addClass('active');
+    }
+  });
+
 
   //set up ScrollMagic
-
   var controller = new ScrollMagic({
     globalSceneOptions: {
       triggerHook: "onLeave"

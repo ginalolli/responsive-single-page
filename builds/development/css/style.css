@@ -337,6 +337,11 @@ header #nav .navbar ul li a:hover {
   color: #063642;
   background-color: #EFC94C;
 }
+/* line 93, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.active {
+  background-color: #DF4848;
+  color: #FFFFFF;
+}
 
 /* line 1, ../../../components/sass/modules/_welcome.scss */
 #welcome {
